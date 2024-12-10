@@ -1,73 +1,73 @@
  /* General Styles */
- body {
+  body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
   }
   
-  h1, h2 {
+h1, h2 {
     text-align: center;
     margin-bottom: 20px;
   }
   
-  section {
+section {
     padding: 20px;
   }
   
-  .section {
+.section {
     border-bottom: 1px solid #ccc;
   }
   
   /* Header */
-  header{
+header{
       position: relative;
       
   }
-  .main-header {
+.main-header {
     background-color: #000;
     color: #fff;
     padding: 20px;
     text-align: center;
   }
   
-  .main-menu {
+.main-menu {
     display: flex;
     justify-content: center;
     background-color: #333;
     padding: 10px 0;
   }
   
-  .main-menu a {
+.main-menu a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
   }
   
-  .main-menu a:hover {
+.main-menu a:hover {
     color: gold;
   }
   
   /* Timeline Styles */
-  .timeline {
+.timeline {
     position: relative;
     margin: 20px auto;
     padding: 20px 0;
     width: 80%;
   }
   
-  .timeline-item {
+.timeline-item {
     display: flex;
     position: relative;
     margin-bottom: 30px;
   }
   
-  .timeline-item:last-child {
+.timeline-item:last-child {
     margin-bottom: 0;
   }
   
-  .timeline-date {
+.timeline-date {
     font-weight: bold;
     font-size: 1.2em;
     color: #fff;
@@ -81,7 +81,7 @@
     position: relative;
   }
   
-  .timeline-date:after {
+.timeline-date:after {
     content: "";
     position: absolute;
     top: 100%;
@@ -93,11 +93,11 @@
     z-index: -1;
   }
   
-  .timeline-item:last-child .timeline-date:after {
+.timeline-item:last-child .timeline-date:after {
     display: none;
   }
   
-  .timeline-content {
+.timeline-content {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -107,12 +107,12 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .timeline-content h3 {
+.timeline-content h3 {
     margin: 0 0 10px;
     color: #333;
   }
   
-  .timeline-content p {
+.timeline-content p {
     margin: 0;
     color: #666;
   }
@@ -126,7 +126,7 @@
     text-align: center;
   }
   
-  #ciutats-clau h2 {
+#ciutats-clau h2 {
     font-size: 2.5em;
     color: #000;
     margin-bottom: 20px;
@@ -134,7 +134,7 @@
   }
   
   /* Contenidor general de les ciutats */
-  .ciutats-container {
+.ciutats-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -142,7 +142,7 @@
   }
   
   /* Cada ciutat */
-  .ciutat {
+.ciutat {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -150,11 +150,11 @@
     transition: transform 0.3s ease;
   }
   
-  .ciutat:hover {
+.ciutat:hover {
     transform: scale(1.03);
   }
   
-  .ciutat h3 {
+.ciutat h3 {
     font-size: 1.8em;
     color: #000;
     margin-bottom: 15px;
@@ -162,13 +162,13 @@
   }
   
   /* Galeria d'imatges */
-  .galeria {
+.galeria {
     display: flex;
     justify-content: center;
     gap: 15px;
   }
   
-  .galeria img {
+.galeria img {
     width: 120px;
     height: auto;
     border-radius: 8px;
@@ -177,13 +177,13 @@
     border: none;
   }
   
-  .galeria img:hover {
+.galeria img:hover {
     transform: scale(1.1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   
   /* Modal per ampliar imatges */
-  #imatge-ampliada {
+#imatge-ampliada {
     display: none;
     position: fixed;
     top: 0;
@@ -196,7 +196,7 @@
     z-index: 1000;
   }
   
-  #imatge-ampliada img {
+#imatge-ampliada img {
     max-width: 80%;
     max-height: 80%;
     border: 5px solid #fff;
@@ -204,7 +204,7 @@
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
   }
   
-  #imatge-ampliada:hover {
+#imatge-ampliada:hover {
     cursor: pointer;
   }
   
@@ -259,10 +259,62 @@
   }
   
 
+  
+
+
+/*Tendencies mosaic*/
+.titul_tendencia h2 {
+    width: 100%; 
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  
+  
+.rectangle-gallery, .Accesoris, .Colors, .Estil {
+    display: flex;
+    gap: 10px; /*separacio laterial*/
+    width: 80%;
+    max-width: 2200px;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    
+  }
+  
+.conntingut {
+    flex: 1;
+    height: 200px;
+    transition: flex 0.3s ease, transform 0.3s ease;
+    overflow: hidden; 
+    
+  }
+  
+ 
+.conntingut:hover {
+    flex: 2;
+    transform: scale(1.05);
+  }
+  
+  
+.conntingut:not(:hover) {
+    flex: 0.8;
+  }
+  
+.conntingut img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
 
 
 
-      
+
+
+
+
+
+
+
 /* Footer */
 .main-footer {
     background-color: #000;
@@ -283,23 +335,23 @@
     gap: 20px; /* Espacio entre columnas */
   }
   
-  .column {
+.column {
     flex: 1; /* Permite que cada columna tenga el mismo tamaño */
     min-width: 150px; /* Ajusta el ancho mínimo de las columnas */
   }
   
-  .column h3 {
+.column h3 {
     margin-bottom: 10px; /* Añade espacio entre el título y los enlaces */
   }
   
-  a {
+a {
     display: block; /* Cada enlace en su línea */
     margin-bottom: 5px; /* Espacio entre enlaces */
     text-decoration: none; /* Elimina subrayado */
     color: #000; /* Color del texto */
   }
   
-  a:hover {
+a:hover {
     color: #007BFF; /* Cambia color al pasar el ratón */
     text-decoration: underline; /* Añade subrayado al pasar el ratón */
   }
