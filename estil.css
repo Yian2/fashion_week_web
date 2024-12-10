@@ -310,6 +310,56 @@ header{
 
 
 
+/*Enllaços*/
+/* Estilos generales para la sección */
+.section.enllacos-section {
+    text-align: center; /* Centra el texto de los títulos y el contenido */
+    padding: 40px; /* Espacio alrededor de la sección */
+    background-color: #f9f9f9; /* Color de fondo claro para la sección */
+    margin: 20px 0; /* Espacio vertical para separar de otras secciones */
+}
+
+/* Título principal de la sección */
+.enllacos-section h2 {
+    color: #333; /* Color oscuro para más contraste */
+    margin-bottom: 30px; /* Espacio debajo del título principal */
+}
+
+/* Estilos para las columnas */
+.enllacos-columns {
+    display: flex; /* Usa flexbox para alinear las columnas */
+    justify-content: center; /* Centra las columnas en el contenedor */
+    gap: 20px; /* Espacio entre cada columna */
+}
+
+/* Estilos para cada columna */
+.column {
+    background-color: white; /* Fondo blanco para cada columna */
+    padding: 20px; /* Padding alrededor del contenido de las columnas */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para resaltar */
+    width: 200px; /* Ancho fijo para cada columna */
+}
+
+.column h3 {
+    color: #555; /* Color más oscuro para los subtítulos */
+    margin-bottom: 15px; /* Espacio debajo de los subtítulos */
+}
+
+/* Estilos para los enlaces */
+.column a {
+    display: block; /* Hace que cada enlace sea un bloque, facilitando clics */
+    color: #0066cc; /* Color azul para los enlaces */
+    margin-bottom: 10px; /* Espacio entre enlaces */
+    text-decoration: none; /* No subrayado */
+    transition: color 0.3s, transform 0.3s; /* Transición suave para color y transformación */
+}
+
+.column a:hover {
+    color: #ff6347; /* Color cuando el ratón pasa por encima */
+    transform: translateX(5px); /* Mueve el enlace a la derecha al pasar el ratón por encima */
+}
 
 
 
