@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f6bbbb, #FFFFFF); /* Cambia los colores según lo que prefieras */
+    font-family: Arial, sans-serif;
+  }
+
 
 /*timeline detallat quant entres a un dels anys*/
 .menu {
@@ -32,6 +39,7 @@
     text-align: center;
     z-index: 10;
   }
+ 
 
   /* Estils per al contingut */
   .content {
@@ -39,6 +47,7 @@
     max-width: 800px;
     padding: 20px;
     font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e4f1ce 0%, #ffffff 100%,);
   }
 
   .content h1 {
