@@ -27,7 +27,7 @@ body {
   }
 
   /* Estils per al títol fix */
-  .sticky-year {
+  .fix_any {
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -55,26 +55,26 @@ body {
     color: #555;
   }
 
-  .section-year {
+  .section-any {
     margin-bottom: 60px;
   }
 
-  .timeline-detailed {
+  .timeline-detall {
     margin-top: 20px;
     border-left: 3px solid #000;
     padding-left: 20px;
   }
 
-  .timeline-detailed-item {
+  .timeline-detall-item {
     margin-bottom: 15px;
   }
 
-  .timeline-detailed-item h3 {
+  .timeline-detall-item h3 {
     color: #000;
     margin: 0;
   }
 
-  .timeline-detailed-item p {
+  .timeline-detall-item p {
     margin: 5px 0 0;
     color: #666;
   }

@@ -1,61 +1,61 @@
- /* General Styles */
-  body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
 h1, h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 section {
-    padding: 20px;
-  }
-  
+  padding: 20px;
+}
+
 .section {
-    border-bottom: 1px solid #ccc;
-  }
-  
-  
-  /* Header */
+  border-bottom: 1px solid #ccc;
+}
+
+
+/* Header */
 header{
-      position: relative;
-      
+  position: relative;
+  
 }
 
 
 .main-menu {
-    display: flex;
-    justify-content: center;
-    background-color: #333; /* Fons lleugerament més clar que el header per distinció */
-    padding: 10px 0;
-    position: fixed; /* Mantenir el menú fixat a la part superior */
-    top: 0;
-    left: 0;
-    right: 0; /* Asegura que el menú s'estén fins als extrems de la finestra */
-    z-index: 1000; /* Manté el menú sobre altres elements */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra per destacar el menú sobre el contingut */
+  display: flex;
+  justify-content: center;
+  background-color: #333; 
+  padding: 10px 0;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0; /* Asegura que el menú s'estén fins als extrems de la finestra */
+  z-index: 1000; /* Manté el menú sobre altres elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra per destacar el menú sobre el contingut */
 }
 
-  
-.main-menu a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-.main-menu a:hover {
-    color: gold;
-  }
 
-  .main-header h1 {
-    transform: translateY(400px); /* Desplaça el títol cap avall sense afectar l'espai de l'element */
-    position: relative;
-    z-index: 10; /* Asegura que el títol aparegui sobre la imatge de fons */
+.main-menu a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-menu a:hover {
+  color: gold;
+}
+
+.main-header h1 {
+  transform: translateY(400px); /* Desplaça el títol cap avall sense afectar l'espai de l'element */
+  position: relative;
+  z-index: 10; 
 }
 
 
@@ -64,41 +64,41 @@ header{
 
 /* Entrada del layout*/
 .main-header {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Ajusta a la altura de la pantalla */
-    background: url('img/foto_inici.webp') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    overflow: hidden; /* Importante per evitar desbordaments pel text animat */
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  background: url('img/foto_inici.webp') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  overflow: hidden; /* evita desbordaments pel text animat */
 }
 
 .background-image {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center; /* Centra verticalment el text */
-    justify-content: center; /* Centra horitzontalment el text */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; /* Centra verticalment el text */
+  justify-content: center; /* Centra horitzontalment el text */
 }
 
 .scrolling-text {
-    position: absolute;
-    white-space: nowrap; /* Impedeix que el text es trenqui en línies */
-    font-size: 2em;
-    animation: animacio 20s linear infinite;
+  position: absolute;
+  white-space: nowrap; /* Impedeix que el text es trenqui en línies */
+  font-size: 2em;
+  animation: animacio 20s linear infinite;
 }
 
 @keyframes animacio {
-    0%, 100% {
-        transform: translateX(-100%);
-    }
-    30%, 70% {
-        transform: translateX(0%);
-    }
-    50% {
-        transform: translateX(10%);
-    }
+0%, 100% {
+    transform: translateX(-100%);
+}
+30%, 70% {
+    transform: translateX(0%);
+}
+50% {
+    transform: translateX(10%);
+}
 }
 
 
@@ -109,36 +109,34 @@ header{
 /*benvinguts*/
 
 .section {
-    padding: 60px 20px;
-    text-align: center;
-    color: #333;
-  }
+  padding: 60px 20px;
+  text-align: center;
+  color: #333;
+}
 
-  /* Estilo del texto */
-  .home-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
+/* Estilo del texto */
+.home-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
 
-  .home-section p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+.home-section p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  /* Sección de ft */
-  .ft_fixada {
-    background-image: url(img/ft_benvinguts.jpg); 
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
- 
+/* Sección de ft */
+.ft_fixada {
+  background-image: url(img/ft_benvinguts.jpg); 
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 
 
@@ -146,116 +144,113 @@ header{
 
 
 
-
-
-  
-  /* Timeline Styles */
+/* Timeline Styles */
 .timeline {
-    position: relative;
-    margin: 20px auto;
-    padding: 20px 0;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(to bottom, #f8d7ef, #e6e6e6 70%, #cccccc); /* Gradiente difuminado */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opcional: añade sombra para un efecto elevado */
-    border-radius: 10px; /* Opcional: bordes redondeados */
+  position: relative;
+  margin: 20px auto;
+  padding: 20px 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #f8d7ef, #e6e6e6 70%, #cccccc); /* difuminat 3 colors */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  border-radius: 10px;
 }
 
 
 .timeline-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px; /* Aumenta el espacio entre items */
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px; /* Aumenta el espai entre items */
 }
 
 
 
 .timeline-date:hover {
-    background-color: #e01a1a;
-    transform: scale(1.1);
+  background-color: #e01a1a;
+  transform: scale(1.1);
 }
 .timeline-date {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #000;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    position: relative; /* Importante para el posicionamiento del pseudo-elemento */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-right: 50px; /* Espacio entre la fecha y la carta */
-}
-
-/* Ajustado para mostrar correctamente la línea */
-.timeline-date:after {
-    content: "";
-    position: absolute;
-    top: 60px; /* Ajusta para que empiece en la parte inferior del círculo */
-    left: 50%; /* Centrar la línea respecto al círculo */
-    transform: translateX(-50%); /* Asegura que la línea esté perfectamente centrada */
-    width: 2px; /* Grosor de la línea */
-    height: 190px; /* Longitud de la línea, ajusta según necesidad */
-    background-color: #000000;
-    z-index: 1; /* Asegúrate de que esté visible, ajustar según sea necesario */
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  position: relative; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-right: 50px; 
 }
 
 
+.timeline-date:after { /*linia q uneix els timline*/
+content: "";
+position: absolute;
+top: 60px;
+left: 50%; 
+transform: translateX(-50%); 
+width: 2px; 
+height: 190px; 
+background-color: #000000;
+z-index: 1; 
+}
 
-.timeline-item:last-child .timeline-date:after {
-    display: none;
+
+
+.timeline-item:last-child .timeline-date:after { /*l'últim any que no tingui linia*/
+display: none;
 }
 
 .carta {
-    width: 300px;
-    height: 200px;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    transform-origin: center;
-    border: 1px solid #ccc;
+width: 300px;
+height: 200px;
+transition: transform 1s;
+transform-style: preserve-3d;
+transform-origin: center;
+border: 1px solid #ccc;
 }
 
 .cara {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
 }
 
 .davant, .darrere {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    background-color: #fff; /* Color predeterminado */
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 10px;
+background-color: #fff;
 }
 
 
 
 .darrere {
-    transform: rotateY(180deg);
-    /* color del dorso de la primera tarjeta */
+transform: rotateY(180deg);
+/* color del dorso de la primera tarjeta */
 }
 
-/* Puedes duplicar estas clases para cada tarjeta con colores diferentes */
+
 .escena .davant {
-    background-color: #da80e8; /* Color de la primera tarjeta */
+background-color: #da80e8; /* Color totes les tarjetes*/
 }
 
 .escena .darrere {
-    background-color: #f08ac2;
+background-color: #f08ac2;
 }
 
 .escena:hover .carta {
-    transform: rotateY(180deg);
+transform: rotateY(180deg);
 }
 
 
@@ -264,248 +259,247 @@ header{
 
 
 
-      /* Gallery  ciutats*/
+/* Galleria  ciutats*/
 
-      #ciutats-clau {
-        padding: 10px 10px;
-        background-color: #f4f4f4;
-        text-align: center;
-      }
-      
-    #ciutats-clau h2 {
-        font-size: 2.5em;
-        color: #000;
-        margin-bottom: 20px;
-        font-family: 'Arial', sans-serif;
-      }
-      
-      /* Contenidor general de les ciutats */
-      .ciutats-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Cambio aquí para hacer 2 columnas */
-        gap: 20px;
-        padding: 5px;
-    }
-      
-      /* Cada ciutat */
-    .ciutat {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-      }
-      
-    .ciutat:hover {
-        transform: scale(1.03);
-      }
-      
-    .ciutat h3 {
-        font-size: 1.8em;
-        color: #000;
-        margin-bottom: 15px;
-        font-family: 'Arial', sans-serif;
-        text-align: center;
-      }
-
-      .ciutat {
-        position: relative;
-        overflow: hidden; /* Mantiene todo dentro del div */
-        z-index: 1; /* Esto mantiene al contenido sobre el fondo */
-    }
-    
-    .ciutat::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center; /* Centra la imagen */
-        background-repeat: no-repeat; /* Evita la repetición de la imagen */
-        opacity: 50%; /* 10% de opacidad, ajusta según necesites */
-        z-index: -1; /* Coloca el fondo detrás del contenido */
-    }
-    /*cada ciutat fons*/
-    #nova-york::before{
-        background-image: url(img/ny_fons.jpg);
-    }
-    
-    #mila::before{
-        background-image: url(img/milan_fons.jpg);
-    }
-    
-    #paris::before {
-        background-image: url(img/paris_fons.jpg);
-    }
-    
-    #londres:before {
-        background-image: url(img/londres_fons.avif);
-    }
-    
-    
-      
-      /* Galeria d'imatges */
-    .galeria {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-      }
-      
-    .galeria img {
-        width: 120px;
-        height: auto;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border: none;
-      }
-      
-    .galeria img:hover {
-        transform: scale(1.1);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-      }
-      
-      /* Modal per ampliar imatges */
-    #imatge-ampliada {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-      }
-      
-    #imatge-ampliada img {
-        max-width: 80%;
-        max-height: 80%;
-        border: 5px solid #fff;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
-      }
-      
-    #imatge-ampliada:hover {
-        cursor: pointer;
-      }
-      
-          
+#ciutats-clau {
+  padding: 10px 10px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
   
-      
-/*Carrusel oufits*/
-.outfits-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  
-.outfits-section h2 {
+#ciutats-clau h2 {
     font-size: 2.5em;
     color: #000;
     margin-bottom: 20px;
     font-family: 'Arial', sans-serif;
   }
   
+  /* Contenidor general de les ciutats */
+  .ciutats-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px;
+    padding: 5px;
+}
+  
+  /* Cada ciutat */
+.ciutat {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+.ciutat:hover { 
+    transform: scale(1.03);
+  }
+  
+.ciutat h3 {
+    font-size: 1.8em;
+    color: #000;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+
+  .ciutat {
+    position: relative;
+    overflow: hidden; /*  Tot dins del div */
+    z-index: 1;
+}
+
+.ciutat::before {
+    content: ""; /*no es veura text ni contingut*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    opacity: 50%; 
+    z-index: -1;
+}
+/*cada ciutat fons*/
+#nova-york::before{
+    background-image: url(img/ny_fons.jpg);
+}
+
+#mila::before{
+    background-image: url(img/milan_fons.jpg);
+}
+
+#paris::before {
+    background-image: url(img/paris_fons.jpg);
+}
+
+#londres:before {
+    background-image: url(img/londres_fons.avif);
+}
+
+
+  
+  /* Galeria d'imatges */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+.galeria img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+  }
+  
+.galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* per ampliar imatges */
+#imatge-ampliada {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+#imatge-ampliada img {
+    max-width: 80%;
+    max-height: 80%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+  }
+  
+#imatge-ampliada:hover {
+    cursor: pointer;
+  }
+  
+      
+
+  
+/*Carrusel oufits*/
+.outfits-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.outfits-section h2 {
+  font-size: 2.5em;
+  color: #000;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
 
 .carousel-container {
-    overflow: hidden; /* Amaga les imatges que surten dels límits */
-    width: 90%; 
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background: #fff;
-  }
-  
+  overflow: hidden; /* Amaga les imatges que surten dels límits */
+  width: 90%; 
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
 
 .carousel {
-    display: flex; 
-    gap: 10px; 
-    transition: transform 0.5s ease-in-out; /* deix-aro preparat per després posar js */
-  }
-  
+  display: flex; 
+  gap: 10px; 
+  transition: transform 0.5s ease-in-out; /* deix-aro preparat per després posar js */
+}
+
 
 .carousel img {
-    flex-grow: 0; 
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 150px;
-    height: auto; 
-    border-radius: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
+  flex-grow: 0; /* No fer-se mes gran*/
+  flex-shrink: 0; /* No es fara més petit*/
+  flex-basis: auto; /* Tamany definit*/
+  width: 150px;
+  height: auto; 
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 .carousel img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-
-  
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
 
 
 
-  
+
+
+
+
 
 
 /*Tendencies mosaic*/
-/* Estilo del título para la sección de tendencias */
+
 #tendencies{
-    background-image: linear-gradient(to bottom, #f1a97d 0%, #f3dbbf 25%, #f3e1bf 100%);
-    min-height: 100vh;
-    padding: 20px;
-    color: white;
+  background-image: linear-gradient(to bottom, #f1a97d 0%, #f3dbbf 25%, #f3e1bf 100%);
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
 }
 
 
 
 .titul_tendencia h2 {
-    width: 100%;
-    text-align: center;
-    margin: 40px 0 30px;
-    font-size: 2.5em;
-    color: #b21515;
-    font-family: 'Arial', sans-serif;
-    
+  width: 100%;
+  text-align: center;
+  margin: 40px 0 30px;
+  font-size: 2.5em;
+  font-family: 'Arial', sans-serif;
+
 }
 
-/* Contenedor principal para cada sección de tendencias */
+
 .rectangle-gallery {
-    display: flex;
-    gap: 10px;
-    width: 80%;
-    max-width: 2200px;
-    margin: 0 auto 40px; /* Centra y agrega espacio debajo */
-    overflow: hidden;
+  display: flex;
+  gap: 10px;
+  width: 80%;
+  max-width: 2200px;
+  margin: 0 auto 40px; 
+  overflow: hidden;
 }
 
-/* Contenido de cada imagen de tendencia */
+
 .conntingut {
-    flex: 1;
-    height: 200px;
-    transition: flex 0.3s ease, transform 0.3s ease;
-    overflow: hidden;
-}
+  flex: 1;
+  height: 200px;
+  transition: flex 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+} 
 
 .conntingut:hover {
-    flex: 2;
-    transform: scale(1.05);
+  flex: 2;
+  transform: scale(1.05);
 }
 
 .conntingut:not(:hover) {
-    flex: 0.8;
+  flex: 0.8;
 }
 
 .conntingut img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
@@ -520,54 +514,53 @@ header{
 /*Enllaços*/
 /* Estilos generales para la sección */
 .section.enllacos-section {
-    text-align: center; /* Centra el texto de los títulos y el contenido */
-    padding: 40px; /* Espacio alrededor de la sección */
-    background-color: #f9f9f9; /* Color de fondo claro para la sección */
-    margin: 20px 0; /* Espacio vertical para separar de otras secciones */
+text-align: center; 
+padding: 40px; 
+background-color: #f9f9f9; 
+margin: 20px 0; 
 }
 
-/* Título principal de la sección */
+
 .enllacos-section h2 {
-    color: #333; /* Color oscuro para más contraste */
-    margin-bottom: 30px; /* Espacio debajo del título principal */
+color: #333; 
+margin-bottom: 30px; 
 }
 
-/* Estilos para las columnas */
+
 .enllacos-columns {
-    display: flex; /* Usa flexbox para alinear las columnas */
-    justify-content: center; /* Centra las columnas en el contenedor */
-    gap: 20px; /* Espacio entre cada columna */
+display: flex; /* alinia les columnas */
+justify-content: center; /* centrar columnes*/
+gap: 20px; 
 }
 
-/* Estilos para cada columna */
+
 .column {
-    background-color: white; /* Fondo blanco para cada columna */
-    padding: 20px; /* Padding alrededor del contenido de las columnas */
-    border: 1px solid #ddd; /* Borde sutil */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para resaltar */
-    width: 200px; /* Ancho fijo para cada columna */
+background-color: white; 
+padding: 20px; 
+border: 1px solid #ddd; 
+border-radius: 8px; 
+box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+width: 200px; 
 }
 
 .column h3 {
-    color: #555; /* Color más oscuro para los subtítulos */
-    margin-bottom: 15px; /* Espacio debajo de los subtítulos */
+color: #555;
+margin-bottom: 15px; 
 }
 
-/* Estilos para los enlaces */
+
 .column a {
-    display: block; /* Hace que cada enlace sea un bloque, facilitando clics */
-    color: #0066cc; /* Color azul para los enlaces */
-    margin-bottom: 10px; /* Espacio entre enlaces */
-    text-decoration: none; /* No subrayado */
-    transition: color 0.3s, transform 0.3s; /* Transición suave para color y transformación */
+display: block;
+color: #0066cc; 
+margin-bottom: 10px; 
+text-decoration: none; 
+transition: color 0.3s, transform 0.3s; 
 }
 
 .column a:hover {
-    color: #ff6347; /* Color cuando el ratón pasa por encima */
-    transform: translateX(5px); /* Mueve el enlace a la derecha al pasar el ratón por encima */
+  transform: translateX(5px); 
 }
-
+/*ff6347*/
 
 
 
@@ -578,163 +571,163 @@ header{
 /* Marcas principals */
 
 .section.marques-section {
-    padding: 20px 0; /* Reduce el padding vertical para evitar exceso de espacio */
-    margin: 0; /* Elimina cualquier margen externo */
-    background-color: #f9f9f9;
-    text-align: center;
+padding: 20px 0; /* Reduce el padding vertical para evitar exceso de espacio */
+margin: 0; /* Elimina cualquier margen externo */
+background-color: #f9f9f9;
+text-align: center;
 }
 
 .marques-gallery {
-    display: flex;
-    justify-content: space-around; /* Distribuye los elementos uniformemente */
-    gap: 20px; /* Mantiene un espacio entre los elementos */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en líneas múltiples */
-    width: 100%; /* Asegura que la galería ocupe todo el ancho disponible */
+display: flex;
+justify-content: space-around; /* Distribuye los elementos uniformemente */
+gap: 20px; /* Mantiene un espacio entre los elementos */
+flex-wrap: wrap; /* Permite que los elementos se ajusten en líneas múltiples */
+width: 100%; /* Asegura que la galería ocupe todo el ancho disponible */
 }
 
 .marques-item {
-    position: relative;
-    flex: 1 1 300px; /* Crecerán para llenar el espacio pero no serán más pequeños de 300px */
-    margin: 10px;
-    overflow: hidden;
-    border-radius: 8px;
-    height: 800px; /* Altura fija para mantener la uniformidad */
+position: relative;
+flex: 1 1 300px; /* Crecerán para llenar el espacio pero no serán más pequeños de 300px*/
+margin: 10px;
+overflow: hidden;
+border-radius: 8px;
+height: 800px; 
 }
 
 .marques-item img {
-    width: 100%;
-    height: 100%; /* Ajuste para que la imagen cubra completamente el espacio del contenedor */
-    object-fit: cover;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+width: 100%;
+height: 100%; 
+object-fit: cover;
+opacity: 0.7;
+transition: opacity 0.3s ease;
 }
 
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    width: 100%;
+.text-superpusat {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+text-align: center;
+width: 100%;
 }
 
-.text-overlay h3, .text-overlay p {
-    margin: 0;
-    padding: 5px 0;
-    font-size: 30px;
+.text-superpusat h3, .text-superpusat p {
+margin: 0;
+padding: 5px 0;
+font-size: 30px;
 }
 
 .marques-item:hover img {
-    opacity: 1; /* Restaura la opacidad al interactuar */
+opacity: 1; /* Restaura la opacitat al interactuar */
 }
 
 
 
 /* section coco chanel*/
-.gallery-item .overlay {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    .gallery-item .overlay p {
-      max-width: 90%;
-      word-wrap: break-word;
-    }
-  
-  header.header {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-    font-family: 'Georgia', serif;
-    margin: 0;
-    letter-spacing: 2px;
-  }
-  
-  .main-content {
-    padding: 20px;
-  }
-  
-  .gallery-section {
-    text-align: center;
-    margin: 40px auto;
-  }
-  
-  .gallery-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #000;
-    font-family: 'Georgia', serif;
-  }
-  
-  .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 10px;
-  }
-  
-  .gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-item:hover img {
-    transform: scale(1.1);
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    text-align: center;
-    padding: 20px;
-    font-size: 1.2em;
-  }
-  
-  .gallery-item .overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  .gallery-item .overlay p {
-    max-width: 90%;
-    word-wrap: break-word;
-  }
+.gallery-item .superpusat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.gallery-item .superpusat p {
+  max-width: 90%;
+  word-wrap: break-word;
+}
 
-  .gallery-item:hover .overlay {
-    opacity: 1;
-  }
-  
+header.header {
+background-color: #000;
+color: #fff;
+text-align: center;
+padding: 20px 0;
+}
+
+header h1 {
+font-size: 2.5em;
+font-family: 'Georgia', serif;
+margin: 0;
+letter-spacing: 2px;
+}
+
+.main-content {
+padding: 20px;
+}
+
+.gallery-section {
+text-align: center;
+margin: 40px auto;
+}
+
+.gallery-section h2 {
+font-size: 2em;
+margin-bottom: 20px;
+color: #000;
+font-family: 'Georgia', serif;
+}
+
+.gallery-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+padding: 10px;
+}
+
+.gallery-item {
+position: relative;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+transform: scale(1.1);
+}
+
+.superpusat {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+transition: opacity 0.3s ease;
+text-align: center;
+padding: 20px;
+font-size: 1.2em;
+}
+
+.gallery-item .superpusat {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 10px;
+box-sizing: border-box;
+}
+.gallery-item .superpusat p {
+max-width: 90%;
+word-wrap: break-word;
+}
+
+.gallery-item:hover .superpusat {
+opacity: 1;
+}
+
 
 
 
@@ -748,58 +741,57 @@ header{
 
 /*Enllaços*/
 .enllacos-section {
-    width: 100%; /* Ocupa tota l'amplada de la pàgina */
-    max-width: 1400px; /* Amplada màxima opcional */
-    margin: 10px auto; /* Centra la secció */
-    margin-bottom: 20px;
-    padding: 200px 80px; /* Espai al voltant */
-    text-align: center;
-    color: #000;
-    border-radius: 30px;
-    background-image: linear-gradient(to bottom, #f1a97d 0%, #f3dbbf 25%, #f3e1bf 100%);
+width: 100%; 
+max-width: 1400px;
+margin: 10px auto; 
+margin-bottom: 20px;
+padding: 200px 80px; 
+text-align: center;
+color: #000;
+border-radius: 30px;
+background-image: linear-gradient(to bottom, #f1a97d 0%, #f3dbbf 25%, #f3e1bf 100%);
 }
 
 .enllacos-columns {
-    display: flex; /* Activa Flexbox */
-    justify-content: space-evenly; /* Espai uniforme entre columnes */
-    gap: 20px; /* Espai entre columnes */
-    flex-wrap: wrap; /* Permet columnes en línies múltiples si cal */
-    width: 100%; /* Ocupa tota l'amplada */
+display: flex; 
+justify-content: space-evenly; 
+gap: 20px;
+flex-wrap: wrap; 
+width: 100%;  
 }
 
 .column {
-    flex: 1; /* Les columnes creixen uniformement */
-    min-width: 200px; /* Amplada mínima */
-    max-width: 300px; /* Amplada màxima */
-    padding: 60px; /* Espai interior */
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra lleugera */
+flex: 1; 
+min-width: 200px; 
+max-width: 300px;
+padding: 60px; 
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 #titul_enllac {
-    text-align: center;          /* Alinea el texto al centro */
-    text-decoration: underline;  /* Subraya el texto */
-    font-size: 28px;             /* Aumenta el tamaño del texto para hacerlo más prominente */
-    font-weight: bold;           /* Hace el texto más grueso */
-    color: #ffffff;                 /* Da un color más oscuro al texto para mejor legibilidad */
-    padding: 20px 0;             /* Añade espacio arriba y abajo para separarlo de otros elementos */
-    margin-top: 20px;            /* Añade espacio en la parte superior si es necesario */
-    font-family: url("https://fonts.google.com/share?selection.family=Ibarra+Real+Nova|Playwrite+AU+SA+Guides"); /* Usa una tipografía limpia y profesional */
-    letter-spacing: 0.05em;      /* Aumenta el espaciado entre caracteres ligeramente */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Opcional: añade una sombra ligera para resaltar el texto */
+text-align: center;          
+text-decoration: underline; 
+font-size: 28px;             
+font-weight: bold;          
+color: #ffffff;             
+padding: 20px 0;            
+margin-top: 20px;          
+font-family: url("https://fonts.google.com/share?selection.family=Ibarra+Real+Nova|Playwrite+AU+SA+Guides"); /* Tipografia diferent*/
+letter-spacing: 0.05em;      
 }
 
 #titul_enllac:hover{
-  transform: scale(1.1);
+transform: scale(1.1);
 }
 
 
 /* Footer */
 
 .main-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
+background-color: #000;
+color: #fff;
+text-align: center;
+padding: 10px;
+}
