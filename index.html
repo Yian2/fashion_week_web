@@ -11,6 +11,7 @@
   <!-- Header -->
   <header class="main-header">
     <h1>Fashion Week: Tendències i Moments Icònics</h1>
+    <input type="text" id="search-bar" placeholder="Cerca seccions..." class="search-input">
     <nav class="main-menu">
         <a href="#home">Home</a>
         <a href="#historia">Història</a>
@@ -23,7 +24,8 @@
     <div class="background-image">
         <div class="scrolling-text">Descobreix les últimes tendències a la Fashion Week!</div>
     </div>
-</header>
+  </header>
+
 
   
 
@@ -134,8 +136,6 @@
         </div>
       </div>
   </section>
-    
-  
 
 
 
@@ -147,42 +147,44 @@
 
 
 <!-- Tendències -->
-  <!-- Galeria x 'Accessoris' -->
-  <section id="tendencies">
-      <h2 id="titul_tendencies">Tendències</h2>
-      <!-- Galeria per 'Accesoris' -->
-      <div class="tendencia Accesoris">
-          <h2 class="titul_tendencia">Accesoris</h2>
-          <div class="rectangle-gallery">
-              <div class="conntingut"><img src="img/accesori1.jpg" alt="Accesori 1"></div>
-              <div class="conntingut"><img src="img/accesori2.jpg" alt="Accesori 2"></div>
-              <div class="conntingut"><img src="img/accesori3.jpg" alt="Accesori 3"></div>
-              <div class="conntingut"><img src="img/accesori4.jpg" alt="Accesori 4"></div>
-          </div>
+<section id="tendencies">
+  <h2 id="titul_capcelera">Tendències</h2>
+  <div class="contingut-tendencies">
+    <!-- Galeria per 'Accessoris' -->
+    <div class="tendencia Accesoris">
+      <h2 class="titul_tendencia">Accesoris</h2>
+      <div class="rectangle-gallery">
+        <div class="conntingut"><img src="img/accesori1.jpg" alt="Accesori 1"></div>
+        <div class="conntingut"><img src="img/accesori2.jpg" alt="Accesori 2"></div>
+        <div class="conntingut"><img src="img/accesori3.jpg" alt="Accesori 3"></div>
+        <div class="conntingut"><img src="img/accesori4.jpg" alt="Accesori 4"></div>
       </div>
-  
-      <!-- Galeria per 'Colors' -->
-      <div class="tendencia Colors">
-          <h2 class="titul_tendencia">Colors</h2>
-          <div class="rectangle-gallery">
-              <div class="conntingut"><img src="img/color1.jpg" alt="Color 1"></div>
-              <div class="conntingut"><img src="img/color2.jpeg" alt="Color 2"></div>
-              <div class="conntingut"><img src="img/color3.jpg" alt="Color 3"></div>
-              <div class="conntingut"><img src="img/color4.jpg" alt="Color 4"></div>
-          </div>
+    </div>
+
+    <!-- Galeria per 'Colors' -->
+    <div class="tendencia Colors">
+      <h2 class="titul_tendencia">Colors</h2>
+      <div class="rectangle-gallery">
+        <div class="conntingut"><img src="img/color1.jpg" alt="Color 1"></div>
+        <div class="conntingut"><img src="img/color2.jpeg" alt="Color 2"></div>
+        <div class="conntingut"><img src="img/color3.jpg" alt="Color 3"></div>
+        <div class="conntingut"><img src="img/color4.jpg" alt="Color 4"></div>
       </div>
-  
-      <!-- Galeria per 'Estil' -->
-      <div class="tendencia Estil">
-          <h2 class="titul_tendencia">Estil</h2>
-          <div class="rectangle-gallery">
-              <div class="conntingut"><img src="img/estil1.jpg" alt="Estil 1"></div>
-              <div class="conntingut"><img src="img/estil2.jpg" alt="Estil 2"></div>
-              <div class="conntingut"><img src="img/estil3.jpg" alt="Estil 3"></div>
-              <div class="conntingut"><img src="img/estil4.jpg" alt="Estil 4"></div>
-          </div>
+    </div>
+
+    <!-- Galeria per 'Estil' -->
+    <div class="tendencia Estil">
+      <h2 class="titul_tendencia">Estil</h2>
+      <div class="rectangle-gallery">
+        <div class="conntingut"><img src="img/estil1.jpg" alt="Estil 1"></div>
+        <div class="conntingut"><img src="img/estil2.jpg" alt="Estil 2"></div>
+        <div class="conntingut"><img src="img/estil3.jpg" alt="Estil 3"></div>
+        <div class="conntingut"><img src="img/estil4.jpg" alt="Estil 4"></div>
       </div>
-  </section>
+    </div>
+  </div>
+</section>
+
   
 
 
@@ -234,26 +236,32 @@
   <!-- Outfits (preparat per aplicar js) -->
   <section id="outfits" class="section outfits-section">
     <h2>Outfits de Celebritats</h2>
-    <div class="carousel">
-      <!-- Carousel fts -->
-      <img src="img/kyle1.jpg" alt="Kylie Jenner">
-      <img src="img/kyle2.jpg" alt="Kylie Jenner">
+    <div id="contingut">
+      <a class="fletxa" href="#" id="botoPrev"><img src="img/prev.png" /></a>
+      <div class="carousel">
+        <!-- Carousel fts -->
+        <img src="img/kyle1.jpg" alt="Kylie Jenner">
+        <img src="img/kyle2.jpg" alt="Kylie Jenner">
 
-      <img src="img/zendaya1.jpg" alt="Zendaya">
-      <img src="img/zendaya2.jpg" alt="Zendaya">
+        <img src="img/zendaya1.jpg" alt="Zendaya">
+        <img src="img/zendaya2.jpg" alt="Zendaya">
 
-      <img src="img/timothee1.jpg" alt="Timothée Chalamet">
-      <img src="img/timothee2.jpg" alt="Timothée Chalamet">
+        <img src="img/timothee1.jpg" alt="Timothée Chalamet">
+        <img src="img/timothee2.jpg" alt="Timothée Chalamet">
 
-      <img src="img/kendall1.jpg" alt="Kendall Jenner">
-      <img src="img/kendall2.jpg" alt="Kendall Jenner">
+        <img src="img/kendall1.jpg" alt="Kendall Jenner">
+        <img src="img/kendall2.jpg" alt="Kendall Jenner">
 
-      <img src="img/doja1.jpg" alt="Doja cat">
-      <img src="img/doja2.jpg" alt="Doja Car">
-
-
-    </div>
+        <img src="img/doja1.jpg" alt="Doja cat">
+        <img src="img/doja2.jpg" alt="Doja Car">
+      </div>
+      <a class="fletxa" href="#" id="botoNext"><img src="img/next.png" /></a>
+  </div>
   </section>
+
+
+
+
 
   <!-- Enllaços -->
   <section id="enllacos" class="enllacos-section">
@@ -277,7 +285,7 @@
       </div>
   </section>
       
-      
+<script src="script.js"></script>
 </main>
 
   <!-- Footer -->
