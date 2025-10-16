@@ -1,0 +1,1 @@
+En aquest projecte he dissenyat i desenvolupat una web de Fashion Week: barra de navegació, cercador de seccions i galeria + carrusel d’imatges. L’he fet 100% responsive (mòbil i escriptori) amb HTML5, CSS3 i JavaScript, cuidant UX i rendiment.
